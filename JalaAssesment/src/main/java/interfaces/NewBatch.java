@@ -1,2 +1,4 @@
-package interfaces;public class NewBatch {
+package interfaces;
+
+public class NewBatch implements  school{
 }

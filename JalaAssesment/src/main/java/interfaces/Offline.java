@@ -1,2 +1,6 @@
-package interfaces;public class Offline {
+package interfaces;
+
+public interface Offline {
+
+    void serviceOffline();
 }

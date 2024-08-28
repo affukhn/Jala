@@ -1,2 +1,8 @@
-package interfaces;public interface Taj {
+package interfaces;
+
+public interface Taj
+{
+    void Dish();
+
+    void  payment();
 }

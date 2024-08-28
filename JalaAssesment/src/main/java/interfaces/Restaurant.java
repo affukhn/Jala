@@ -1,6 +1,7 @@
 package interfaces;
 
-public class Restaurant
+public interface Restaurant
 {
+    void Name();
 
 }

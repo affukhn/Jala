@@ -1,4 +1,4 @@
-package String;
+package staticClass;
 
 public class StaticMain {
     public static int a=10;

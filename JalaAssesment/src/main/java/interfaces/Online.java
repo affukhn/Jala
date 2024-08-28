@@ -1,2 +1,6 @@
-package interfaces;public interface Online {
+package interfaces;
+
+public interface Online {
+
+    void ServiceOnline();
 }
