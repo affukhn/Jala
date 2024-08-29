@@ -43,6 +43,40 @@ public class CreateException {
         }
 
     }
+    public void tryCatchFinally()
+    {
+        try {
+            System.out.println("Inside try block.");
+            int result = 10 / 0; // This will throw ArithmeticException
+        } catch (ArithmeticException e) {
+            System.out.println("Caught an arithmetic exception: " + e.getMessage());
+        } finally {
+            System.out.println("This is the finally block, executed regardless of an exception.");
+        }
+
+
+    }
+    public void ArrayOutBound()
+    {
+        int[] array = new int[5];
+        try {
+            // This will throw ArrayIndexOutOfBoundsException
+            array[10] = 1;
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Caught ArrayIndexOutOfBoundsException: " + e.getMessage());
+        }
+    }
+
+    public void nullPointerException()
+    {
+        try {
+            String str = null;
+            // This will throw NullPointerException
+            System.out.println(str.length());
+        } catch (NullPointerException e) {
+            System.out.println("Caught NullPointerException: " + e.getMessage());
+        }
+    }
 
 
     public static void main(String[] args) {
@@ -52,6 +86,11 @@ public class CreateException {
 //        c.tryCatchExceptionHandling();
 //                     c.throwException();
                      c.multipleTryCatch();
+                     c.tryCatchFinally();
+                     c.ArrayOutBound();
+                     c.nullPointerException();
+                    throw  new MyCustomException("My custom Exception");
+
                  }catch (Exception e)
                  {
                      e.printStackTrace();
