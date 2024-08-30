@@ -87,7 +87,7 @@ public class file {
              OutputStreamWriter osw = new OutputStreamWriter(fos);
              BufferedWriter bw = new BufferedWriter(osw)) {
 
-            bw.write(text);  // Write the text to the file
+            bw.write(text);  // Write the text to the fileF
             System.out.println("Text written to file successfully.");
 
         } catch (IOException e) {
